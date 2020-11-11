@@ -12,15 +12,16 @@ class SplashScreenView extends StatefulWidget {
 
 class _SplashScreenViewState extends State<SplashScreenView> {
   final NavigationService _navigationService = locator<NavigationService>();
+
   @override
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3),
-            () => _navigationService.navigateTo(NavigationRouter.bottomNavigation));
+        () => _navigationService.navigateTo(NavigationRouter.bottomNavigation));
   }
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(

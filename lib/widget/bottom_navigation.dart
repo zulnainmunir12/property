@@ -17,7 +17,8 @@ class MyBottomNavigationBar extends StatefulWidget {
 class _MyBottomNavigationBar extends State<MyBottomNavigationBar> {
   final NavigationService _navigationService = locator<NavigationService>();
   int _currentIndex = 0;
-  void onTappedBar(int index){
+
+  void onTappedBar(int index) {
     setState(() {
       _currentIndex = index;
     });
