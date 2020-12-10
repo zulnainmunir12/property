@@ -7,7 +7,7 @@ import 'package:property/ui/shared/font_size.dart';
 import 'package:property/view/home_screens/home_screen_view.dart';
 import 'package:property/view/home_screens/more_screen_view.dart';
 import 'package:property/view/home_screens/plots_screen_view.dart';
-import 'package:property/view/home_screens/premium_screen_view.dart';
+import 'package:property/view/home_screens/prime_screen_view.dart';
 import 'package:property/view/home_screens/project_screen_view.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
@@ -27,7 +27,7 @@ class _MyBottomNavigationBar extends State<MyBottomNavigationBar> {
   final List<Widget> _children = [
     HomeScreenView(),
     ProjectScreenView(),
-    PremiumScreenView(),
+    PrimeScreenView(),
     PlotScreenView(),
     MoreScreenView(),
   ];
@@ -47,28 +47,25 @@ class _MyBottomNavigationBar extends State<MyBottomNavigationBar> {
       iconSize: 30,
       selectedFontSize: FontSize.l,
       unselectedFontSize: FontSize.m,
-      selectedItemColor: AppColor.redColor,
+      selectedItemColor: AppColor.primaryColor,
       type: BottomNavigationBarType.fixed,
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          title: Text('Home'),
+          label: 'Home',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.map_rounded),
-          title: Text('Projects'),
+          label: 'Project',
         ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.star),
-          title: Text('Premium'),
-        ),
+        BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Prime'),
         BottomNavigationBarItem(
           icon: Icon(Icons.location_on_outlined),
-          title: Text('Plots'),
+          label: 'Plot',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.drag_handle_rounded),
-          title: Text('More'),
+          label: 'More',
         ),
       ],
       onTap: onTappedBar,

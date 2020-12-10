@@ -95,7 +95,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                                 labelColor: AppColor.blackColor,
                                 isScrollable: true,
                                 indicatorSize: TabBarIndicatorSize.tab,
-                                indicatorColor: AppColor.redColor,
+                                indicatorColor: AppColor.primaryColor,
                                 labelPadding:
                                     EdgeInsets.only(right: 50, left: 50),
                                 indicatorWeight: 3,
@@ -282,7 +282,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                     ),
                     HorizontalSpacing(width: 0.02),
                     FlatButton(
-                        color: AppColor.redColor,
+                        color: AppColor.primaryColor,
                         onPressed: () {},
                         child: Center(
                           child: Text(
